@@ -71,7 +71,6 @@ RSpec.describe PostsController do
       it "does not update" do
         expect(article_found.content).to_not eq("too short")
       end
-
       it "renders the form again" do
         expect(response).to render_template(:edit)
       end
@@ -79,4 +78,3 @@ RSpec.describe PostsController do
   end
 
 end
-
